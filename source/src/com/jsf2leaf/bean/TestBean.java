@@ -50,10 +50,10 @@ public class TestBean implements Serializable { // "implements Serializable" to 
 		springfieldMap.addLayer(placesLayer);
 		
 		//Cluster Layer
-		Layer clusterLayer = (new Layer()).setLabel("Cluster").setClusterEnabled(true);
-		for(double lat=42; lat<43; lat+=0.0001)	//10k markers !
-			clusterLayer.addMarker(new Marker(new LatLong(""+lat,"-72.547488"),lat+" -72.547488"));
-		springfieldMap.addLayer(clusterLayer);
+//		Layer clusterLayer = (new Layer()).setLabel("Cluster").setClusterEnabled(true);
+//		for(double lat=42; lat<43; lat+=0.0001)	//10k markers !
+//			clusterLayer.addMarker(new Marker(new LatLong(""+lat,"-72.547488"),lat+" -72.547488"));
+//		springfieldMap.addLayer(clusterLayer);
 		
 		//Polyline and Circle Layer
 		Layer polycircleLayer = (new Layer()).setLabel("Polyline/Circle");
